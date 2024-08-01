@@ -1,3 +1,110 @@
-h1{
-    color: red;
+@font-face {
+    font-family: "NotoSerifRegular";
+    src: url("../fonts/NotoSerif-Regular.ttf") format("truetype");
 }
+@font-face {
+    font-family: "NotoSerifBold";
+    src: url("../fonts/NotoSerif-Bold.ttf") format("truetype");
+}
+body{
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+.header_block{
+    width: 100%;
+    height: 100%;
+    background-color: #FBEDDA;
+}
+.header_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 150px;
+    margin-left: 150px;
+    padding-top: 30px;
+}
+.header_menu_text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    
+}
+.header_menu_text > a > p{
+    color: #021112;
+    font-size: 18px;
+    font-family: 'NotoSerifRegular';
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.header_menu_text > a > p:hover{
+    color: #F93633;
+}
+
+.header_menu_text > a > button{
+    color:#FFFFFF;
+    background-color:#13A6BA;
+    border: none;
+    border-radius: 8px;
+    width: 127px;
+    height: 50px;
+    font-size: 18px;
+    font-family: 'NotoSerifRegular';
+    transition: 0.5s;
+}
+
+.header_menu_text > a > button:hover{
+    background-color:#000000;
+}
+.header_content{
+    padding-top: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header_content_block_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header_content_block_text > h1,p{
+    margin: 0px;
+}
+.header_content_block_text > h1{
+    font-size: 80px;
+    color: #000000;
+    text-align: center;
+}
+.header_content_block_text > p{
+    color:#677071;
+    font-size: 20px;
+    margin-top: 30px;
+}
+input[type=radio] {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: -1;
+  }
+  
+  label {
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  label {
+    color: white;
+    display: inline-block;
+    background: black;
+    margin: 0 0 .5em 0;
+    padding: 1em 2em;
+  }
+  
+  input[type=radio]:checked~label {
+    background-color: red;
+  }
