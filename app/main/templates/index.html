@@ -27,11 +27,73 @@
                 <p>The find and most trusted marketplace of design & build house in the world.</p>
             </div>
             <div class="header_home_search">
-                <div class="house_transactions">
-                        
+                <div class="form_radio_group">
+                    <div class="form_radio_group-item">
+                        <input id="radio-1" type="radio" name="radio" value="1" checked>
+                        <label for="radio-1" onClick="showTab('rent')">Rent</label>
+                    </div>
+                    <div class="form_radio_group-item">
+                        <input id="radio-2" type="radio" name="radio" value="2">
+                        <label for="radio-2" onClick="showTab('buy')">Buy</label>
+                    </div>
+                    <div class="form_radio_group-item">
+                        <input id="radio-3" type="radio" name="radio" value="3">
+                        <label for="radio-3" onClick="showTab('sell')">Sell</label>
+                    </div>
+                </div>
+                <div class="header_home_content_main">    
+                    <div class="header_home_content" id="rent">
+                        <div class="header_home_location">
+
+                        </div>
+                        <hr>
+                        <div class="header_home_type">
+
+                        </div>
+                        <hr>
+                        <div class="header_home_price">
+
+                        </div>
+                        <div class="header_home_btn">
+                            <a><button>Search</button></a>
+                        </div>
+                    </div>
+                    <div class="header_home_content" id="buy">
+                        <div class="header_home_location">
+
+                        </div>
+                        <hr>
+                        <div class="header_home_type">
+
+                        </div>
+                        <hr>
+                        <div class="header_home_price">
+
+                        </div>
+                        <div class="header_home_btn">
+                            <a><button>Buy</button></a>
+                        </div>
+                    </div>
+                    <div class="header_home_content" id="sell">
+                        <div class="header_home_location">
+
+                        </div>
+                        <hr>
+                        <div class="header_home_type">
+
+                        </div>
+                        <hr>
+                        <div class="header_home_price">
+
+                        </div>
+                        <div class="header_home_btn">
+                            <a><button>Sell</button></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="{% static "js/main.js" %}"></script>
 </body>
 </html>
